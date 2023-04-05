@@ -4,28 +4,36 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Florilège d'animations</title>
+		<title>portfolio</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="animation/style.css" />
+		<link rel="stylesheet" href="mango/static/css/chat.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
+
 	<body>
 		<div class="custom-cursor"></div>
-
+		<canvas></canvas>
 		<nav>
-			<a href="#">Home</a>
-			<a href="#">Services</a>
-			<a href="#">Features</a>
+			<!-- <a href="#" class="anchor">Home</a> -->
+			<a href="#discover" class="anchor nav-push-link">About me</a>
+			<a href="#projects" class="anchor nav-push-link">Projects</a>
+			<a href="#discover" class="anchor nav-push-link">contact</a>
 		</nav>
 
-		<section class="hero">
+		<section class="hero" id="home">
 			<div class="hero-content">
-				<h1 aria-label="Porsche, set free."></h1>
-				<p class="subtitle">Lorem ipsum dolor sit amet.</p>
+				<h1 aria-label="Creat set free."></h1>
+				<p class="subtitle">Salvino Varciat, front-end developer.</p>
 			</div>
 			<a href="#discover" class="hero-push-link">
 				<img src="ressources/down-arrow.svg" alt="arrow down" />
@@ -34,71 +42,250 @@
 
 		<main class="container">
 			<section id="discover" class="discover-section">
-				<h2>Feel the <span>road</span></h2>
-				<p class="section-subtitle discover-subtitle">Start today</p>
+				<h2>About <span>me</span></h2>
+				<p class="section-subtitle discover-subtitle">Hello there!</p>
 
 				<div class="discover-content">
 					<div class="text-discover-content">
-						<h3>You've never experienced that.</h3>
+						<h3>I,m Salvino Varciat.</h3>
 						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt,
-							hic! Distinctio quisquam ullam recusandae suscipit itaque
-							assumenda numquam facilis, quod voluptas ratione repellendus esse
-							ipsum nostrum fuga vel at. Ducimus reiciendis modi nihil hic velit
-							dolorum nulla recusandae iste vero!
+							I am 31 years old and I come from France and live in montreal for
+							6 years now.
+							<br />
+							<br />Formerly a hatter in Montreal and a pastry chef in France
+							before that, I decided to become a front-end developer.
+							<br /><br />Always looking for new challenges and experiences you
+							can contact me if you are interested.
 						</p>
-						<a href="#contact" class="discover-link">
-							<span>Contact Us</span>
+						<a
+							target="_blank"
+							href="https://www.linkedin.com/in/salvino-varciat-22ab9b255/ "
+							class="discover-link"
+						>
+							<span> Contact me</span>
 							<img src="ressources/right-chevron.svg" alt="right chevron" />
 						</a>
 					</div>
 					<img
-						src="ressources/vertical-porsche.jpg"
+						src="ressources/photo-about-me.png"
 						alt="porsche car"
 						class="discover-main-img"
 					/>
 				</div>
 			</section>
 
-			<section class="side-apparition">
-				<h2>Browse the models.</h2>
-				<p class="section-subtitle">Pick your favorite.</p>
+			<section id="projects" class="side-apparition">
+				<h2>Some of my projects.</h2>
+				<p class="section-subtitle">Take a look.</p>
 
-				<div class="side-apparition-container">
+				<div id="discover-project" class="side-apparition-container">
 					<div class="side-slide-content">
-						<h3>Cayman.</h3>
+						<h3>Sliding-sign-in</h3>
 						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
-							distinctio, dolorem maxime iure earum ducimus?
+							Small personal login/sign-in project with animation depending on
+							the size of the screen and the choice of connection
 						</p>
+						<a
+							target="_blank"
+							href="https://github.com/SalvinoV/Sliding-sign-in"
+							class="discover-project-git"
+						>
+							<span>GitHub</span>
+							<img src="ressources/right-chevron.svg" alt="right chevron" />
+						</a>
 					</div>
-					<img src="ressources/side-1.jpg" alt="porsche car" />
+					<img src="ressources/Frame_1.png" alt="porsche car" />
 				</div>
 
 				<div class="side-apparition-container">
-					<img src="ressources/side-2.jpg" alt="porsche car" />
+					<img src="ressources/Frame_1.png" alt="porsche car" />
 					<div class="side-slide-content">
-						<h3>Panamera.</h3>
+						<h3>YelpCamp</h3>
 						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
-							distinctio, dolorem maxime iure earum ducimus?
+							My graduation project and my biggest for the moment, thanks to
+							this project I learned a lot with Node.js, Express and Mongodb.
 						</p>
+						<a
+							target="_blank"
+							href="https://github.com/SalvinoV/Yelpcamp "
+							class="discover-project-git"
+						>
+							<span>GitHub</span>
+							<img src="ressources/right-chevron.svg" alt="right chevron" />
+						</a>
 					</div>
 				</div>
 
 				<div class="side-apparition-container">
 					<div class="side-slide-content">
-						<h3>The 911.</h3>
+						<h3>Infinity Scroll</h3>
+						<p>
+							A fun project using an image api using HTML/CSS and Javascript.
+						</p>
+						<a
+							target="_blank"
+							href="https://github.com/SalvinoV/scrollinifini "
+							class="discover-project-git"
+						>
+							<span> GitHub</span>
+							<img src="ressources/right-chevron.svg" alt="right chevron" />
+						</a>
+					</div>
+					<img src="ressources/Frame_1.png" alt="porsche car" />
+				</div>
+
+				<div class="side-apparition-container">
+					<img src="ressources/Frame_1.png" alt="porsche car" />
+					<div class="side-slide-content">
+						<h3>Weather app</h3>
+						<p>
+							A weather application made with HTML/CSS and Javascript using a
+							weather API.
+						</p>
+						<a
+							target="_blank"
+							href="https://github.com/SalvinoV/WeatherApp"
+							class="discover-project-git"
+						>
+							<span>GitHub</span>
+							<img src="ressources/right-chevron.svg" alt="right chevron" />
+						</a>
+					</div>
+				</div>
+
+				<div class="side-apparition-container">
+					<div class="side-slide-content">
+						<h3>Filterable list</h3>
+						<p>
+							This project allows users to be filtered in a list using the
+							search bar
+						</p>
+						<a
+							target="_blank"
+							href="https://github.com/SalvinoV/Liste-filtrable"
+							class="discover-project-git"
+						>
+							<span>GitHub</span>
+							<img src="ressources/right-chevron.svg" alt="right chevron" />
+						</a>
+					</div>
+					<img src="ressources/Frame_1.png" alt="porsche car" />
+				</div>
+				<div class="side-apparition-container">
+					<img src="ressources/Frame_1.png" alt="porsche car" />
+					<div class="side-slide-content">
+						<h3>Audio Player</h3>
 						<p>
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
 							distinctio, dolorem maxime iure earum ducimus?
 						</p>
+						<a
+							target="_blank"
+							href="https://github.com/SalvinoV/Audio-player"
+							class="discover-project-git"
+						>
+							<span>GitHub</span>
+							<img src="ressources/right-chevron.svg" alt="right chevron" />
+						</a>
 					</div>
-					<img src="ressources/side-3.jpg" alt="porsche car" />
+				</div>
+
+				<div class="side-apparition-container">
+					<div class="side-slide-content">
+						<h3>Password generator</h3>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
+							distinctio, dolorem maxime iure earum ducimus?
+						</p>
+						<a
+							target="_blank"
+							href="https://github.com/SalvinoV/Password-generator "
+							class="discover-project-git"
+						>
+							<span>GitHub</span>
+							<img src="ressources/right-chevron.svg" alt="right chevron" />
+						</a>
+					</div>
+					<img src="ressources/Frame_1.png" alt="porsche car" />
+				</div>
+				<div class="go-home">
+					<a href="#home" class="go-home-link">
+						<img src="ressources/down-arrow.svg" alt="arrow down" />
+					</a>
+				</div>
+			</section>
+
+			<!-- //chatbox -->
+			<section id="bot" class="mangoBot">
+				<div class="chat-bar-collapsible">
+					<button id="chat-button" type="button" class="collapsible">
+						Ask Mango something
+						<i
+							id="chat-icon"
+							style="color: #fff"
+							class="fa fa-fw fa-comments-o"
+						></i>
+					</button>
+
+					<div class="content">
+						<div class="full-chat-block">
+							<!-- Message Container -->
+							<div class="outer-container">
+								<div class="chat-container">
+									<!-- Messages -->
+									<div id="chatbox">
+										<h5 id="chat-timestamp"></h5>
+
+										<p id="botStarterMessage">
+											<span>Loading...</span>
+										</p>
+
+										<div id="chat-bar-bottom">
+											<p></p>
+										</div>
+									</div>
+
+									<!-- User input box -->
+									<div class="chat-bar-input-block">
+										<div id="userInput">
+											<input
+												id="textInput"
+												class="input-box"
+												type="text"
+												name="msg"
+												placeholder="Tap 'Enter' to send a message"
+											/>
+											<p></p>
+										</div>
+
+										<div class="chat-bar-icons">
+											<i
+												id="chat-icon"
+												style="color: crimson"
+												class="fa fa-fw fa-heart"
+												onclick="heartButton()"
+											></i>
+											<i
+												id="chat-icon"
+												style="color: #333"
+												class="fa fa-fw fa-send"
+												onclick="sendButton()"
+											></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
 
+		<script src="./mango/fuzzyset.js-master/fuzzyset.js-master/dist/fuzzyset.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="mango/static/scripts/chat.js"></script>
+		<script src="mango/static/scripts/responses.js"></script>
+		<script src="animation/app.js"></script>
 		<script src="app.js"></script>
 	</body>
 </html>

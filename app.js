@@ -9,7 +9,9 @@ function handleCustomCursor(e) {
 const title = document.querySelector("h1");
 const subtitle = document.querySelector(".subtitle");
 const heroPushLink = document.querySelector(".hero-push-link");
-const txt = "Porsche, set free.";
+const goHome = document.querySelector(".go-home");
+const navLinks = document.querySelectorAll(".nav-push-link");
+const txt = "Creat set free.";
 
 function typewriter(text, index) {
 	if (index > 3) subtitle.classList.add("active");
@@ -25,8 +27,10 @@ setTimeout(() => {
 	typewriter(txt, 0);
 }, 300);
 
-// Push down button
+// Push  button
+goHome.addEventListener("click", slideDown);
 heroPushLink.addEventListener("click", slideDown);
+navLinks.forEach((link) => link.addEventListener("click", slideDown));
 
 function slideDown(e) {
 	e.preventDefault();
