@@ -272,7 +272,7 @@ section h2 span {
 	max-width: 175px;
 	padding: 10px 15px;
 	color: #f1f1f1;
-	margin-top: 50px;
+	margin-top: 20px;
 	text-decoration: none;
 	background: transparent;
 	display: flex;
@@ -283,6 +283,21 @@ section h2 span {
 .side-apparition-container .discover-project-git img {
 	width: 15px;
 }
+.tool-logos {
+	/* width: 80%; */
+	display: flex;
+	justify-content: start;
+	align-items: center;
+
+	margin-top: 20px;
+}
+.side-slide-content .tool-logos img {
+	width: 30px;
+	height: 30px;
+
+	margin-right: 10px;
+}
+
 .discover-main-img {
 	width: 50%;
 	object-fit: cover;
