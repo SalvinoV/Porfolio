@@ -11,7 +11,7 @@ const subtitle = document.querySelector(".subtitle");
 const heroPushLink = document.querySelector(".hero-push-link");
 const goHome = document.querySelector(".go-home");
 const navLinks = document.querySelectorAll(".nav-push-link");
-const txt = "Creat set free.";
+const txt = "Create set free.";
 
 function typewriter(text, index) {
 	if (index > 3) subtitle.classList.add("active");
