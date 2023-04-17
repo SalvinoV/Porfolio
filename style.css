@@ -372,6 +372,11 @@ h2.active,
 	object-fit: cover;
 	object-position: 0 70%;
 }
+.side-apparition-container img.iphone {
+	height: 325px;
+	width: auto;
+	margin-left: auto;
+}
 
 /* Animations */
 .side-apparition-container {
