@@ -1,0 +1,69 @@
+// color
+$purple: #9fa0ff !default;
+$pink: #dab6fc !default;
+$red: #dc3545 !default;
+$blue: #1a1b6c !default;
+$white: #ffffff !default;
+$light: #f5f5ff !default;
+$gray-100: #8895b3 !default;
+$black: #191919 !default;
+
+$primary: $purple;
+$secondary: $pink;
+
+//theme-colors
+$theme-colors: (
+	"primary": $primary,
+	"secondary": $secondary,
+	"pink": $pink,
+	"light": $light,
+	"blue": $blue,
+	"gray": $gray-100,
+) !default;
+//body color
+$body-bg: $light !default;
+$body-color: $gray-100 !default;
+//spacers
+$spacer: 1rem !default;
+$spacers: (
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.625,
+	3: $spacer * 0.781,
+	4: $spacer * 1.563,
+	5: $spacer * 2.5,
+	6: $spacer * 3.125,
+) !default;
+//font-familly/size
+$font-size-base: 1rem;
+$font-size-sm: $font-size-base * 0.75 !default;
+$font-family-sans-serif: "Roboto", sans-serif;
+$min-contrast-ratio: 2.33 !default;
+
+// radius
+$border-radius: 0.625rem !default;
+
+//button forms/size-spacing
+
+$input-btn-padding-y: 0.625rem !default;
+$input-btn-padding-x: 1.563rem !default;
+//navbar
+$nav-link-font-weight: 400 !default;
+$nav-link-color: $gray-100 !default;
+$nav-link-hover-color: #191919 !default;
+$navbar-nav-link-padding-x: 0.781rem !default;
+//container-max-widths:
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1224px,
+) !default;
+
+//headings
+$headings-color: $black !default;
+$headings-font-weight: bold !default;
+$h1-font-size: $font-size-base * 2 !default;
+$h2-font-size: $font-size-base * 1.563 !default;
+$h3-font-size: $font-size-base * 1.25 !default;
